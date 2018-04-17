@@ -10,11 +10,7 @@
   padding-bottom: 2px;
 }
 
-.navbar-default {
-    background-color:teal;
-    background-image: none;
-    background-repeat: no-repeat;
-   }
+
 
 body{
 
@@ -114,10 +110,6 @@ h4{
 
 
 }
-button, input, .btn, a.btn {
-
-    
-}
 
 btn-danger{
 
@@ -133,7 +125,7 @@ img{
 
 #optin{
 
-    background: rgb(233, 76, 111);
+    background: rgb(32,69, 124);
     padding: 20px 0;
     color: white;
     -webkit-font-smoothing: antialiased;
@@ -168,4 +160,15 @@ section h3{
     background: url('../img/stuff-bg copy.jpg') 50% 100% repeat fixed;
     background-size: cover;
 
+}
+.card{
+
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+}
+
+span.icon-bar{
+
+    background-color: white;
 }
