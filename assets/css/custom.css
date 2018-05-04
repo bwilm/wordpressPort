@@ -39,10 +39,23 @@ h1, h2{
 h3{
     margin: 20px 0;
 }
+#primary{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 h4{
 
     font-size: 18px;
 }
+
+p.lead{
+    font-weight: normal;
+}
+
+p{
+    margin:  0 0 15px;
+}
+
 /*HERO*/
 
 #hero{
@@ -110,6 +123,41 @@ h4{
 
 
 }
+.modal-content{
+    background:url('../img/tile.jpg') top left repeat;
+
+}
+.badge.social{
+
+background: #9c9b9b;
+font-size: 24px;
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 42px;
+margin: 0 5px 20px 0;
+padding: 0;
+-webkit-border-radius: 50px;
+-moz-border-radius: 50px;
+border-radius: 50px;
+color: white;
+
+}
+
+.badge.social.twitter:hover{
+
+    background: skyblue;
+}
+.badge.social.github:hover{
+
+    background: purple;
+}
+
+.badge.social.facebook:hover{
+
+    background: rgb(16, 102, 201);
+}
+
 
 btn-danger{
 
@@ -121,7 +169,54 @@ img{
     max-width: 100%;
 }
 
+blockquote {
+
+    padding: 1em;
+    border: none;
+    font-style: italic;
+    text-align: left;
+
+}
+
+blockquote cite {
+
+    display: block;
+    color: #777;
+    margin: 15px 0 0 0;
+}
+
+blockquote:before{
+
+    display:none;
+
+}
+
+
+footer{
+    background: #3e4249;
+    color: white;
+    padding: 20px 0 10px;
+    font-size: 12px
+}
+
+footer p{
+
+    margin: 0;
+}
+
+footer a:link, footer a:visited{
+
+    color: white;
+
+}
+
+footer a:hover{
+
+    color: #dd5638
+}
 /*Layout ==========================================*/
+
+
 
 #optin{
 
@@ -171,4 +266,269 @@ section h3{
 span.icon-bar{
 
     background-color: white;
+}
+
+li:hover{
+    cursor: pointer;
+   }
+
+.row + .row{
+
+   margin-top: 20px
+}
+
+/* MEDIA QUERIES ===============================================*/
+
+@media screen  and ( max-width: 768px){
+
+    .logo{
+        width: 50%;
+    }
+#optin p{
+
+    margin: 0 0 0 10px;
+
+}
+
+#featurette iframe{
+    height: 240px;
+}
+
+    
+
+}
+
+/*=================BLOG PAGE========================== */
+
+#blog-hero{
+background: url('../img/stuff-feature.jpg') 50% 0 repeat fixed;
+min-height: 300px;
+padding: 40px, 0;
+color: white;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+
+}
+
+.feature-image{
+    display: table;
+    width: 100%;
+}
+
+
+.post, .widget, #comments{
+    position: relative;
+    border: solid 1px #dddddd;
+    background: white;
+    margin: 0 0 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+}
+
+.post header,
+.post .post-excerpt,
+.post .post-body, #comments .comments-wrap{
+
+    padding: 20px;
+
+}
+.post header h3,
+.post header h1{
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: solid 1px #dddddd
+}
+.post header h1{
+
+    font-size: 24px;
+
+}
+.post-image{
+    height: auto;
+
+}
+
+.post-details{
+    font-size: 12px;
+    widows: 90%
+}
+
+.post-details i.fa{
+
+    padding-left: 10px;
+
+}
+.post-details i.fa:first-child{
+
+    padding: 0;
+}
+
+/* WIDGET ====================*/
+
+.widget{
+    padding: 20px;
+}
+.widget h4{
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: solid 1px #dddddd;
+}
+.widget ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.widget ul li{
+margin: 0 0 5px;
+
+}
+.widget ul li:hover{
+
+    position: relative;
+    left: 10px;
+}
+.post-comments-badge{
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    border: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: rgb(228,95,86);
+    text-align: center;
+    display: table;
+
+    
+}
+
+.post-comments-badge a{
+
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+
+}
+
+.post-comments-badge i.fa{
+
+    display: block;
+    font-size: 15px;
+    padding: 0px;
+    margin-bottom: 4px;
+}
+
+.post-comments-badge:hover{
+    background-color: green;
+
+}
+
+/*=========== FORMS =========== */
+
+label{
+
+    display: block;
+    font-weight: bold;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea{
+    color: #666666;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px, 12px;
+
+
+}
+
+#comments h3{
+
+    text-align: center;
+
+}
+
+#comments h4{
+
+    
+    font-size: 1.3em;
+}
+
+#comments ol {
+
+    list-style: none;
+}
+
+#comments ol li {
+
+    background: rgb(0,0,0,0.02);
+    padding: 10px, 20px;
+    margin: 10px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px rgba(0, 0, 0, 0.03);
+
+}
+
+#comments ol li ol.children{
+
+    padding: 0;
+    list-style: none;
+    font-size: 0.96em;
+}
+
+#leave-comment { 
+
+margin: 40px 0 0;
+padding: 20px 0 0;
+border-top: solid 1px #eee;
+
+}
+
+input[type="submit"],
+button[type="submit"]{
+
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
+input[type="submit"]:hover,
+button[type="submit"]:hover{
+
+    outline: none;
+    border: none;
+    background: #aaa;
+
 }
